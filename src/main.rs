@@ -51,10 +51,16 @@ fn day_2() {
                     &"Z" => 3,
                     _ => 0,
                 };
-                if (me.eq(&"X") && opp.eq(&"A")) || (me.eq(&"Y") && opp.eq(&"B")) || (me.eq(&"Z") && opp.eq(&"C")) {
+                if (me.eq(&"X") && opp.eq(&"A"))
+                    || (me.eq(&"Y") && opp.eq(&"B"))
+                    || (me.eq(&"Z") && opp.eq(&"C"))
+                {
                     score_1 += 3;
                 }
-                if (me.eq(&"X") && opp.eq(&"C")) || (me.eq(&"Y") && opp.eq(&"A")) || (me.eq(&"Z") && opp.eq(&"B")) {
+                if (me.eq(&"X") && opp.eq(&"C"))
+                    || (me.eq(&"Y") && opp.eq(&"A"))
+                    || (me.eq(&"Z") && opp.eq(&"B"))
+                {
                     score_1 += 6;
                 }
             }
